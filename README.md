@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-PdfView--Android-green.svg?style=flat )]( https://android-arsenal.com/details/1/7820 )
 
+## The original repo is here [pdfview](https://github.com/Dmitry-Borodin/pdfview-android) (Thanks Dmitry-Borodin for such a nice library)
+
+This forked version is just hosted on a different maven due to JCenter has deprecated.
+
 Android PDF view - small (73kB .aar file, ~400 methods before minification) and efficient PDF viewer embedded in your native app
 
 It is based on ImageView and can handle big files with reasonable scrolling and zooming performance. 
@@ -28,17 +32,17 @@ There is a [sample](/sample-network) of how to do it.
 
 ## Add to your project:
 
-The library is hosted in jcenter, it is available by default on new android projects
+Add it in your root build.gradle at the end of repositories:
 ```
      repositories {
-        <...>
-        jcenter()
-    }
+     			...
+     			maven { url 'https://jitpack.io' }
+     }
 ```
 
 Add gradle dependency:
 ```
-implementation "com.pdfview:pdfview-android:1.0.0"
+implementation 'com.github.devendroid:pdfview-android:1.0.0'
 ```
 
 ## Wiki
